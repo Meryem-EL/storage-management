@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/productPage.css">
+  <link rel="stylesheet" href="css/productList.css">
+  <title>ProductList</title>
+</head>
+ 
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Gestion de Stock</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="active" href="productList.html">ProductList</a></li>
+      <li><a href="product.html"> New Product</a></li>
+    </ul>
+  </nav>
+<!--Product Table -->
+
+<div class="container">
+<table class="content-table">
+<thead>
+ <tr>
+    <th>id</th>
+    <th>name</th>
+    <th>amount</th>
+    <th>action</th>
+ </tr>
+</thead>
+<tbody id="listTable">
+
+</tbody>
+
+
+</table>
+
+</div>
+<script src="js/productList.js"></script>
+</body>
+ 
+</html>

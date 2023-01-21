@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+  }
+   
+  body{
+    font-family: montserrat;
+  }
+
+  .container{
+    position: block;
+    margin: 20px 20px;
+    width: 100%;
+  }
+   
+  label{
+    width:30%;
+  }
+   
+  .productForm{
+    max-width: 550px;
+    margin: 0 auto;
+    background: whitesmoke;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 2px 2px #1111;
+  }
+   
+  .inputField{
+    display: flex;
+    flex-direction: row;
+    margin-right: 4%;
+    margin-top: 20px;
+    line-height: 25px;
+    width: 100%;
+  }
+   
+  .btn{
+    background: #0082e6;
+    align-items: center;
+    float: right;
+    text-align: center;
+    padding: 15px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+   
+  input{
+    padding-left:5px;
+  }
+   
+  .inputs{
+    width:100%;
+  }
+   
+  .required{
+    color: red;
+    font-weight: bold;
+    margin-left: 5px;
+  }
+   
+  .hidden{
+    display: none;
+  }
+   
+  .wrapper{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+   
+  .btnForm{
+    width: 10%;
+  }
+   
+  .successMessage{
+    width: 100%;
+    background: rgb(74, 165, 74);
+    border-radius: 5px;
+    line-height: 35px;
+    margin: 5px auto;
+    text-align: center;
+    color: aliceblue;
+    font-weight: bold;
+  }
+   
+  @media (max-width: 550px){
+    .container{
+      margin: 0;
+   
+    }
+   
+    .wrapper{
+      display: block;
+    }
+   
+    .btnForm{
+      display: block;
+      margin: 10px auto;
+    }
+   
+   
+    .btn{
+      float: none;
+    }
+     
+  }
+
+  /* Modal */
+  .modal-bg{
+    position:fixed;
+    top:0;
+    left: 0;
+    width:100vh;
+    height: 100vh;
+    background-color: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content:center ;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: vi;
+  }
+  .bg-active{
+    visibility: visible;
+    opacity: 1;
+  }
+.modal{
+position: relative;
+background-color:white;
+width: 30%;
+height: 20%;
+display: flex;
+align-items: center;
+justify-content: space-around;
+flex-direction: column;
+text-align: center;
+  }
+
+  .modal button{
+background: #0082e6;
+padding: 10px 30px;
+border: none;
+color: #fff;
+cursor: pointer;
+text-transform: uppercase;
+  }
+  .modal input{
+    line-height: 25px;
+  }
+  .modal-close{
+position: absolute;
+top: 10px;
+right: 10px;
+font-weight: bold;
+cursor: pointer;
+color: white;
+background-color: red;
+padding: 3px;
+  }

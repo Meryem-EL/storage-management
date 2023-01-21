@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/menu.css">
+  <link rel="stylesheet" href="css/productPage.css">
+  <link rel="stylesheet" href="css/productList.css">
+  <title>Product</title>
+</head>
+ 
+<body>
+  <nav>
+    <input type="checkbox" id="check">
+    <label for="check" class="checkbtn">
+      <i class="fas fa-bars"></i>
+    </label>
+    <label class="logo">Gestion de Stock</label>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="productList.html">ProductList</a></li>
+      <li><a class="active" href="product.html"> New Product</a></li>
+    </ul>
+  </nav>
+
+     <!-- Product page -->
+  <div class="container">
+    <form  class="productForm">
+      <div id="SuccessMessage"></div>
+ 
+      <div class="wrapper">
+ 
+        <div class="inputs">
+ 
+          <!-- Product id -->
+          <div class="inputField">
+            <label for="ProductId">Id :</label>
+            <input name="ProductId" type="text" id="productId" disabled>
+          </div>
+ 
+          <!-- Product name -->
+          <div class="inputField">
+            <label for="ProductName">Product Name :</label>
+            <input name="ProductName" type="text" id="productName" required><span class="required">*</span>
+          </div>
+ 
+        </div>
+ 
+        <div class="btnForm">
+ 
+        <input class="btn" type="button" onclick="saveProduct()" value="Save">
+        <input class="btn modal-btn" type="button"  value="Trans">
+ 
+      </div>
+
+    </div>
+    </form>
+    <div id='TableHolder'></div>
+  </div>
+
+<!--Transaction modal -->
+  <div class="container">
+    <div  class="modal-bg">
+      <div class='modal'>
+        <h3>Transaction</h3>
+        <label for=""amount>QTY :</label>
+        <input id="transactionQty" type="number" name="amount">
+        <button onclick="saveTransaction()">Add</button>
+        <span class="modal-close">X</span>
+      </div>
+    </div>
+
+  </div>
+
+<!---->
+
+
+
+
+<script src="js/product.js"></script>
+</body>
+ 
+</html>
